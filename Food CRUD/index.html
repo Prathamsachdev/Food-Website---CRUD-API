@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./images/a-logo-with-the-text-foodiehub-in-bold-cursive-let-l9ipSnniQEmsBb5emPrEyQ-M0jlqWUBQLSn38eM9lJQiA.jpeg" type="image/x-icon">
+  
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/images/a-logo-with-the-text-foodiehub-in-bold-cursive-let-l9ipSnniQEmsBb5emPrEyQ-M0jlqWUBQLSn38eM9lJQiA.jpeg" alt="">
+            </div>
+            <div class="navLinks">
+                <a href="">Home</a>
+                <div class="dropdown">
+                    <a href="#">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="category" data-category="pizza">Pizza</a>
+                        <a href="#" class="category" data-category="burger">Burger</a>
+                        <a href="#" class="category" data-category="indian food">Indian Food</a>
+                        <a href="#" class="category" data-category="south indian">South Indian</a>
+                        <a href="#" class="category" data-category="pasta">Pasta</a>
+                        <a href="#" class="category" data-category="meal">Meal</a>
+                        <a href="#" class="category" data-category="drink">Drinks</a>
+                        <a href="#" class="category" data-category="japanese">Japanese</a>
+                        <a href="#" class="category" data-category="french fries">French Fries</a>
+                        <a href="#" class="category" data-category="mexican">Mexican Food</a>
+                    </div>
+                </div>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="btn">
+                <button id="add-food-button" class="login-button">Add Food Item</button>
+            </div>
+        </nav>
+    </header>
+    
+
+    <div class="main">
+        <div class="row">
+            <!-- Food items will be fetched and displayed here -->
+        </div>
+        
+        <form id="food-form">
+            <input type="hidden" name="id" id="food-id">
+            <input type="text" name="title" placeholder="Title" required>
+            <input type="text" name="description" placeholder="Description" required>
+            <input type="text" name="price" placeholder="Price" required>
+            <input type="text" name="image" placeholder="Image URL" required>
+            <input type="text" name="category" placeholder="category" required>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+
+    <footer>
+        <h1>Foodie - Hub!</h1>
+        <h3>Foodiehub Pvt. Ltd.&copy; 2024</h3>
+        <h5>Address: Ahmedabad, Gujarat</h5>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
